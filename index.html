@@ -476,15 +476,16 @@
 
     /* ─── SERVICE AREA ────────────────────────────── */
     .area-section { background: var(--bg); border-top: 1px solid var(--border); }
-    .area-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
-    .chip {
-      background: var(--bg-white);
-      border: 1px solid var(--border);
-      padding: 7px 16px; border-radius: 40px;
-      font-size: 13px; font-weight: 500; color: var(--gray-md);
-      transition: color .2s, border-color .2s, background .2s;
+    .area-towns {
+      margin-top: 32px; font-size: 15.5px; color: var(--gray-md);
+      line-height: 2; max-width: 800px;
     }
-    .chip:hover { color: var(--red); border-color: var(--red); background: var(--red-lt); }
+    .area-towns a {
+      color: var(--charcoal); font-weight: 500; text-decoration: none;
+      transition: color .2s;
+    }
+    .area-towns a:hover { color: var(--red); }
+    .area-sep { color: var(--border); margin: 0 6px; }
 
     /* ─── CTA BANNER ──────────────────────────────── */
     .cta-banner {
@@ -687,7 +688,7 @@
 
   <!-- TOPBAR -->
   <div class="topbar">
-    <span>📍 239 Greenfield Road, South Deerfield, MA 01373</span>
+    <a href="https://maps.google.com/?q=239+Greenfield+Road+South+Deerfield+MA+01373" target="_blank" rel="noopener" style="color:rgba(255,255,255,.75);text-decoration:none;">📍 239 Greenfield Road, South Deerfield, MA 01373</a>
     <div class="topbar-right">
       <span>Mon–Fri · 8am–5pm</span>
       <a href="tel:4136653989" class="topbar-phone">☎ (413) 665-3989</a>
@@ -986,23 +987,7 @@
     <p class="section-label fade-up">Where We Serve</p>
     <h2 class="section-h2 fade-up">Proudly Serving<br/>Western Massachusetts</h2>
     <p class="section-sub fade-up">Based in South Deerfield, our customers come from communities across Franklin, Hampshire, and Hampden Counties.</p>
-    <div class="area-chips fade-up">
-      <span class="chip">South Deerfield</span><span class="chip">Greenfield</span>
-      <span class="chip">Northampton</span><span class="chip">Amherst</span>
-      <span class="chip">Turners Falls</span><span class="chip">Montague</span>
-      <span class="chip">Deerfield</span><span class="chip">Whately</span>
-      <span class="chip">Hatfield</span><span class="chip">Sunderland</span>
-      <span class="chip">Hadley</span><span class="chip">Erving</span>
-      <span class="chip">Northfield</span><span class="chip">Gill</span>
-      <span class="chip">Bernardston</span><span class="chip">Colrain</span>
-      <span class="chip">Conway</span><span class="chip">Leyden</span>
-      <span class="chip">Leverett</span><span class="chip">Shutesbury</span>
-      <span class="chip">Wendell</span><span class="chip">Orange</span>
-      <span class="chip">Southampton</span><span class="chip">Williamsburg</span>
-      <span class="chip">Florence</span><span class="chip">Easthampton</span>
-      <span class="chip">Leeds</span><span class="chip">Goshen</span>
-      <span class="chip">Palmer</span><span class="chip">+ More</span>
-    </div>
+    <p class="area-towns fade-up"><a href="https://maps.google.com/?q=South+Deerfield+MA" target="_blank" rel="noopener">South Deerfield</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Greenfield+MA" target="_blank" rel="noopener">Greenfield</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Northampton+MA" target="_blank" rel="noopener">Northampton</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Amherst+MA" target="_blank" rel="noopener">Amherst</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Turners+Falls+MA" target="_blank" rel="noopener">Turners Falls</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Montague+MA" target="_blank" rel="noopener">Montague</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Deerfield+MA" target="_blank" rel="noopener">Deerfield</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Whately+MA" target="_blank" rel="noopener">Whately</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Hatfield+MA" target="_blank" rel="noopener">Hatfield</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Sunderland+MA" target="_blank" rel="noopener">Sunderland</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Hadley+MA" target="_blank" rel="noopener">Hadley</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Erving+MA" target="_blank" rel="noopener">Erving</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Northfield+MA" target="_blank" rel="noopener">Northfield</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Gill+MA" target="_blank" rel="noopener">Gill</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Bernardston+MA" target="_blank" rel="noopener">Bernardston</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Colrain+MA" target="_blank" rel="noopener">Colrain</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Conway+MA" target="_blank" rel="noopener">Conway</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Leyden+MA" target="_blank" rel="noopener">Leyden</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Leverett+MA" target="_blank" rel="noopener">Leverett</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Shutesbury+MA" target="_blank" rel="noopener">Shutesbury</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Wendell+MA" target="_blank" rel="noopener">Wendell</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Orange+MA" target="_blank" rel="noopener">Orange</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Southampton+MA" target="_blank" rel="noopener">Southampton</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Williamsburg+MA" target="_blank" rel="noopener">Williamsburg</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Florence+MA" target="_blank" rel="noopener">Florence</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Easthampton+MA" target="_blank" rel="noopener">Easthampton</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Leeds+MA" target="_blank" rel="noopener">Leeds</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Goshen+MA" target="_blank" rel="noopener">Goshen</a><span class="area-sep">·</span><a href="https://maps.google.com/?q=Palmer+MA" target="_blank" rel="noopener">Palmer</a><span class="area-sep">·</span><em style="color:var(--gray-lt);">and surrounding communities</em></p>
   </section>
 
   <!-- CTA BANNER -->
@@ -1039,15 +1024,22 @@
           <span class="contact-block-main" style="cursor:default;">Mon–Fri · 8:00am – 5:00pm</span>
           <span class="contact-block-sub">Closed weekends.</span>
         </div>
+        <div class="contact-divider"></div>
+        <div class="contact-block">
+          <span class="contact-block-label">Registration</span>
+          <span class="contact-block-main" style="cursor:default;font-size:20px;">MA Registered Repair Shop</span>
+          <span class="contact-block-sub">License #RS1560 — Commonwealth of Massachusetts</span>
+        </div>
       </div>
       <div class="fade-up">
-        <div class="map-placeholder">
-          <div class="map-grid-bg"></div>
-          <div class="map-pin">
-            <div class="map-pin-dot"></div>
-            <p>Greg's Autobody Shop<br/>239 Greenfield Rd, South Deerfield</p>
-            <a href="https://maps.google.com/?q=239+Greenfield+Road+South+Deerfield+MA" target="_blank" rel="noopener">Open in Google Maps →</a>
-          </div>
+        <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(26,37,64,.1);height:340px;">
+          <iframe
+            src="https://maps.google.com/maps?q=239+Greenfield+Rd,+South+Deerfield,+MA+01373&output=embed&z=15"
+            width="100%" height="340" style="border:0;display:block;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Greg's Autobody Shop location">
+          </iframe>
         </div>
       </div>
     </div>
@@ -1065,6 +1057,10 @@
       <a href="#process">Process</a>
       <a href="#insurance">Insurance</a>
       <a href="#contact">Contact</a>
+      <a href="https://www.facebook.com/GregsAutoBodySouthDeerfield/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
     </div>
   </footer>
 
