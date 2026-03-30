@@ -461,6 +461,13 @@
       font-size: 13px; font-weight: 600;
       color: var(--charcoal);
       display: flex; align-items: center; gap: 8px;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    a.insurance-tag:hover {
+      border-color: var(--red);
+      background: var(--red-lt);
+      color: var(--red);
     }
     .insurance-tag::before {
       content: '';
@@ -863,7 +870,7 @@
 
   <!-- PHOTO BAND -->
   <div class="photo-band" aria-hidden="true">
-    <div class="photo-band-item" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=75')"></div>
+    <div class="photo-band-item" style="background-image:url('https://images.unsplash.com/photo-1498887960847-2a5e46312788?q=80&w=1738&auto=format&fit=crop')"></div>
     <div class="photo-band-item" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=75')"></div>
     <div class="photo-band-item" style="background-image:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&auto=format&fit=crop&q=75')"></div>
   </div>
@@ -872,7 +879,7 @@
   <section id="why" class="why-section">
     <div class="why-grid">
       <div class="why-img-wrap fade-up">
-        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&auto=format&fit=crop&q=80" alt="Auto body technician at work" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1613412597206-c51215dd32f3?q=80&w=1548&auto=format&fit=crop" alt="Auto body technician at work" loading="lazy" />
         <div class="why-badge">RS #1560 — Registered Repair Shop</div>
       </div>
       <div class="why-content fade-up">
@@ -975,9 +982,9 @@
       <div class="fade-up">
         <p class="section-label">Preferred Network Partners</p>
         <div class="insurance-list">
-          <div class="insurance-tag">Commerce / MAPFRE Car EZ</div>
-          <div class="insurance-tag">MetLife Care</div>
-          <div class="insurance-tag">Plymouth Rock Door-to-Door</div>
+          <a class="insurance-tag" href="https://www.mapfreinsurance.com/car-insurance/car-ez/" target="_blank" rel="noopener">Commerce / MAPFRE Car EZ</a>
+          <a class="insurance-tag" href="https://www.metlife.com/" target="_blank" rel="noopener">MetLife Care</a>
+          <a class="insurance-tag" href="https://www.plymouthrock.com/claims/services/door-to-door-valet-claim-service" target="_blank" rel="noopener">Plymouth Rock Door-to-Door</a>
           <div class="insurance-tag">Enterprise Rental Coordination</div>
         </div>
       </div>
